@@ -2,6 +2,13 @@ const burger = document.querySelector('.header__burger')
 const menu = document.querySelector('.header__navigation-bar')
 const body = document.getElementById('body')
 
+
+setTimeout(() =>{
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden"
+    writeText()
+},700)
+
 burger.addEventListener('click', ()=>{
     burger.classList.toggle('active');
     menu.classList.toggle('active');
@@ -65,7 +72,7 @@ function writeText(){
     writeLine()
 
 }
-writeText()
+
 
 
 
