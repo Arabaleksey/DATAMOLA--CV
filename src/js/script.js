@@ -137,12 +137,12 @@ async function getPictures() {
     let responce = await fetch('https://63cba5ac5c6f2e1d84b93cfa.mockapi.io/cv')
     return  await responce.json()
         .then(function(el){
-            preloader.style.opacity = "0";
-            preloader.style.visibility = "hidden";
             writeText()
             makeGrid(el)
             localStorage.setItem('img',JSON.stringify(el))
         })
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
 }
 getPictures()
 
