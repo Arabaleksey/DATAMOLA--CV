@@ -50,20 +50,6 @@
     transform: translateY(-5px);
   
 }
-.hobby__open-img{
-    position: absolute;
-    top: 50%;
-    left:47%;
-    width: 20px;
-    height: 20px;
-    background-image:url('../img/magnifier.svg');
-    cursor:pointer;
-    opacity:0;
-}
-.hobby__picture:hover .hobby__open-img{
-    opacity:1;
-    transition: .8s;
-}
 
 .hobby__picture img{
     width: 100%;
@@ -114,6 +100,7 @@
     overflow: hidden;
     position: relative;
     width: 80%;
+    border-radius: var(--border-radius);
 }
 
 .hobby__slider-line{

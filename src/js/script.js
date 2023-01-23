@@ -129,65 +129,38 @@ function rollSlider(){
 
 
 
-const pictures = document.getElementById('hobby__wrapper')
 const modalPicture = document.getElementById("modal__picture")
 const modalPictureCloseBtn = document.getElementsByClassName("modal__picture-close")[0];
 const modalPictureContent = document.getElementById("modal__picture-inner")
 
-
-function makeGrid (data){
-    data.forEach(function(item){
-        displayPictures =`
-        <div class="hobby__picture" id="${item.id}">
-            <img src="${item.url}" class="hobby__img" id="hobby__img" alt="">
-            <div class="hobby__open-img" id="hobby__open-img"></div>
-        </div>
+const getImg = document.querySelectorAll('.hobby__img')
+    getImg.forEach((el)=>{
+    el.addEventListener('click',()=>{
+        modalPictureContent.innerHTML=`
+        <img src="${el.getAttribute('src')}" alt="" class="modal__picture-open">
         `;
-
-        pictures.insertAdjacentHTML("afterbegin", displayPictures);
-        const openImg = document.getElementById('hobby__open-img')
-        pictures
-            .querySelector(`img[id="hobby__img"]`)
-            .addEventListener('click', ()=>{
-            modalPicture.style.display = "block";
-            body.classList.toggle('lock');
-            modalPictureContent.innerHTML=`
-            <img src="${item.url}" alt="" class="modal__picture-open">
-            `
-            modalPictureCloseBtn.onclick = function(){
-                modalPicture.style.display = "none";
-                body.classList.remove('lock');
-            }
-            window.onclick = function(event){
-                if(event.target == modalPicture){
-                    modalPicture.style.display = "none"
-                    body.classList.remove('lock');
-                }
-
-            }
-            })
-
-        openImg.addEventListener('click',(el) => {
-            el.preventDefault;
-            modalPicture.style.display = "block";
-            body.classList.toggle('lock');
-            modalPictureContent.innerHTML=`
-            <img src="${item.url}" alt="" class="modal__picture-open">
-            `
-            modalPictureCloseBtn.onclick = function(){
-                modalPicture.style.display = "none";
-                body.classList.remove('lock');
-            }
-            window.onclick = function(event){
-                if(event.target == modalPicture){
-                    modalPicture.style.display = "none"
-                    body.classList.remove('lock');
-                }
-
-            }
-  
-        })
+        mainForModalImg()
     })
+})
+   
 
+function mainForModalImg() {
+    modalPicture.style.display = "block";
+    body.classList.toggle('lock');
+    modalPictureCloseBtn.onclick = function(){
+        modalPicture.style.display = "none";
+        body.classList.remove('lock');
+    }
+    window.onclick = function(event){
+        if(event.target == modalPicture){
+            modalPicture.style.display = "none"
+            body.classList.remove('lock');
+        }
+
+    }
 }
+
+
+
+
 
