@@ -1,0 +1,221 @@
+@media only screen and (max-width: 1200px) {
+    .about__container {
+        max-width: 960px;
+    }
+    .about__column-1{
+        flex-basis: 30%;
+    }
+    .about__column-2{
+        flex-basis: 65%;
+    }
+    .about__title{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .about__text{
+        font-size: 16px;
+    }
+    .about__skills{
+        width: 500px;
+    }
+    .about__bar{
+        margin: 10px 0;
+    }
+    .about__info{
+        margin-bottom: 5px;
+    }  
+    .about__info span{
+        font-size: 17px;
+    }
+    .about__line{
+        height: 7px;
+    }    
+    .about__tools-info{
+        font-weight: var( --text-weight-regular);
+        font-size: 16;
+    }
+
+}
+@media only screen and (max-width: 992px){
+    .about__container {
+        max-width: 720px;
+    }
+    .about__column-1{
+        flex-basis: 35%;
+        order:2;
+    }
+    .about__column-2{
+        flex-basis: 60%;
+        order:1;
+    }
+    .about__title{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .about__text{
+        font-size: 16px;
+    }
+    .about__link{
+        margin-right: 50px;
+        font-size: 16;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__skills{
+        width: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .about__container {
+        max-width: 540px;
+    }
+    .about__column-1{
+        flex-basis: 35%;
+        order:2;
+    }
+    .about__column-2{
+        flex-basis: 60%;
+        order:1;
+    }
+    .about__title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about__text{
+        font-size: 12px;
+    }
+    .about__links{
+        margin: 20px 0 20px;
+    }
+    .about__link{
+        margin-right: 50px;
+        font-size: 14px;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__skills{
+        width: 300px;
+        padding: 15px 30px;
+    }
+    .about__bar{
+        margin: 5px 0;
+    }
+    .about__info span{
+        font-size: 12px;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__line{
+        height: 5px;
+    }
+    .about__line span{
+        height: 100%;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__html:after{
+        font-size: 12px;
+    }
+    .about__css{
+        width: 75%;
+    }
+    .about__css:after{
+        font-size: 12px;
+    }
+    .about__js:after{
+        font-size: 12px;
+    }
+    .about__scss:after{
+        font-size: 12px;
+    }
+    .about__education{
+        font-weight: var(--text-weight-medium);
+        font-size: 14px;
+    }
+    .about__education-time{
+        font-weight: var(--text-weight-medium);
+        font-size: 14px;
+    }
+    .about__tools-info{
+        font-weight: var( --text-weight-medium);
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .about{
+        padding-top: 60px;
+    }
+    .about__container {
+        max-width: 80%;
+    }
+
+    .about__column-1{
+        flex-basis: 35%;
+        order:2;
+        display: none;
+    }
+    .about__column-2{
+        flex-basis: 100%;
+        order:1;
+    }
+    .about__title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .about__text{
+        font-size: 14px;
+    }
+    .about__links{
+        margin: 20px 0 20px;
+    }
+    .about__link{
+        margin-right: 50px;
+        font-size: 14px;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__skills{
+        width: 270px;
+        padding: 15px 30px;
+    }
+    .about__bar{
+        margin: 5px 0;
+    }
+    .about__info span{
+        font-size: 12px;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__line{
+        height: 5px;
+    }
+    .about__line span{
+        height: 100%;
+        font-weight: var(--text-weight-medium);
+    }
+    .about__html:after{
+        font-size: 12px;
+    }
+    .about__css{
+        width: 75%;
+    }
+    .about__css:after{
+        font-size: 12px;
+    }
+    .about__js:after{
+        font-size: 12px;
+    }
+    .about__scss:after{
+        font-size: 12px;
+    }
+    .about__education{
+        font-weight: var(--text-weight-medium);
+        font-size: 14px;
+    }
+    .about__education-time{
+        font-weight: var(--text-weight-medium);
+        font-size: 14px;
+    }
+    .about__tools-info{
+        font-weight: var( --text-weight-medium);
+        font-size: 14px;
+    }
+}

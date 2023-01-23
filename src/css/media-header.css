@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1200px) {
+    .header__container {
+        max-width: 960px;
+    }
+    .header__wrapper-nav {
+        max-width: 960px;
+    }
+
+    .header__navigation {
+        height: 60px;
+    }
+    .header__title {
+        font-size: 24px;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .header__container {
+        max-width: 720px;
+    }
+    .header__wrapper-nav {
+        max-width: 100%;
+    }
+
+    .header__navigation {
+        height: 50px;
+    }
+    .header__title {
+        font-size: 18px;
+    }
+
+    .header__navigation-links {
+        font-size: 14px;
+        width: 100px;
+        }
+        .header__wrapper {
+            left:40%;
+        }
+
+}
+
+
+@media only screen and (max-width: 768px){
+    body.lock{
+        overflow:hidden;
+    }
+    .header__container {
+        max-width: 540px;
+    }
+    .header__wrapper-nav {
+        max-width: 540px;
+    }
+
+    .header__navigation {
+        height: 50px;
+    }
+    .header__navigation-links {
+        font-size: 12px;
+    }
+    .header__burger{
+        display: block;
+    }
+    .header__burger.active .header__bar:nth-child(2){
+        opacity: 0;
+    }
+    .header__burger.active .header__bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .header__burger.active .header__bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header__navigation-bar{
+        overflow: auto;
+        position:fixed;
+        left:-100%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        transition:.3s;
+        background-color: var(--bcg-color);
+    }
+    .header__navigation-list{
+        display: block;
+        height: 50px;
+
+    }
+    .header__navigation-links{
+        margin: 0 auto;
+    }
+    .header__navigation-bar.active{
+        left:0;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .header__container {
+        max-width: 80%;
+    }
+    .header__wrapper-nav {
+        max-width: 90%;
+    }
+
+    .header__navigation {
+        height: 50px;
+    }
+    .header__navigation-links {
+        font-size: 12px;
+        width: 70px;
+        }
+}

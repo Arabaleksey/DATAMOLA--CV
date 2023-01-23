@@ -1,0 +1,45 @@
+@import 'fonts.css';
+@import 'preloader.css';
+@import 'header.css';
+@import 'main.css';
+@import 'about.css';
+@import 'hobby.css';
+@import 'modal.css';
+@import 'contact.css';
+@import 'footer.css';
+@import 'media-header.css';
+@import 'media-main.css';
+@import 'media-about.css';
+@import 'media-hobby.css';
+@import 'media-modal.css';
+@import 'media-contact.css';
+@import 'media-footer.css';
+@import 'variables.css';
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:var(--white-color);
+}
+button{
+    cursor: pointer;
+}
+body{
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color:var(--white-color);
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bcg-color);
+    width: 8px;
+}

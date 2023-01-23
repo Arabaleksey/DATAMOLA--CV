@@ -1,0 +1,13 @@
+:root {
+    --main-color: #F4BF87;
+    --bcg-color: #3C3C3C;
+    --contact-color: #262626;
+    --white-color: #fff;
+    --black-clor:#000;
+    --text-size: 18px;
+    --border-radius:20px;
+    --text-weight-regular: 400;
+    --text-weight-medium: 500;
+    --text-weight-semiBold: 600;
+    --text-weight-bold: 700;
+}
