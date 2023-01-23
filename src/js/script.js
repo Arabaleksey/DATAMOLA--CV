@@ -141,6 +141,7 @@ async function getPictures() {
             preloader.style.visibility = "hidden";
             writeText()
             makeGrid(el)
+            localStorage.setItem('img',JSON.stringify(el))
         })
 }
 getPictures()
