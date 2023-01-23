@@ -49,6 +49,7 @@
     position: relative;
     background-color: transparent;
     border:0;
+    --black-clor:#000;
 }
 .about__link.active{
     color:var(--main-color);
