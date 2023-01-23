@@ -65,6 +65,7 @@ function writeText(){
     writeLine()
 
 }
+writeText()
 
 
 
@@ -132,20 +133,7 @@ const pictures = document.getElementById('hobby__wrapper')
 const modalPicture = document.getElementById("modal__picture")
 const modalPictureCloseBtn = document.getElementsByClassName("modal__picture-close")[0];
 const modalPictureContent = document.getElementById("modal__picture-inner")
-async function getPictures() {
-    let responce = await fetch('https://63cba5ac5c6f2e1d84b93cfa.mockapi.io/cv')
-    return  await responce.json()
-        .then(function(el){
-            writeText()
-            makeGrid(el)
-            preloader.style.opacity = "0";
-            preloader.style.visibility = "hidden";
-   
-            
-        })
 
-}
-getPictures()
 
 function makeGrid (data){
     data.forEach(function(item){

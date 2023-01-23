@@ -113,7 +113,7 @@
     margin:10px auto;
     overflow: hidden;
     position: relative;
-    width: 50%;
+    width: 80%;
 }
 
 .hobby__slider-line{
@@ -133,7 +133,8 @@
     position: absolute;
     background-color: transparent;
     border:none;
-    top:47%;
+    top:50%;
+    transform: translateY(-50%);
     left:0;
 }
 .hobby__slider-btn:hover{

@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+    .main{
+        height: 700px;
+    }
     .main__container{
         max-width: 960px;
     }
@@ -8,12 +11,14 @@
 
 @media only screen and (max-width: 992px){
     .main{
-        height: 800px;
+        height: 750px;
     }
     .main__container{
         max-width: 720px;
     }
-
+    .main__wrapper{
+        left: 35%;
+    }
 
     .main__hello {
         font-size: 20px;

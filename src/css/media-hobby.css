@@ -5,10 +5,11 @@
     .hobby__title{
         font-size: 40px;
     }
-    .hobby__slider-btn img{
-        width: 30px;
-        height: 30px;
+    .hobby__btn-next{
+        left:92%;
     }
+       
+
     
 
 }
@@ -48,10 +49,10 @@
     }
 
     .hobby__slider-btn img{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
-       
+
     
 }
 
@@ -111,6 +112,9 @@
     .hobby__wrapper .hobby__picture:nth-child(8){
         grid-column:3/4;
         grid-row:1/2;
+    }
+    .hobby__slider{
+        width: 100%;
     }
   
 
@@ -175,10 +179,12 @@
         grid-column:3/4;
         grid-row:1/2;
     }
-
+    .hobby__slider{
+        width: 100%;
+    }
     .hobby__slider-btn img{
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
     }
 
 }
